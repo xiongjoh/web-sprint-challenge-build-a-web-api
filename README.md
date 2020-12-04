@@ -57,10 +57,15 @@ We have provided test data for all the resources.
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. The core features of Node.js and Express and why they are useful.
+Node's core feature is to give developers the ability to write software, and Express is a framework that assists in building web application and web services. They are useful because they allow you to use the same programming language for front and back end development, and carry over the advantages of javascript to back-end development.
 1. Understand and explain the use of Middleware.
+Middleware can be built-in, third party, or custom built. Middleware can be used for verification and it adds a lot more functionality to our CRUD operations.
 1. The basic principles of the REST architectural style.
+REST architecture is stateless, chacheable, and has a uniform interface that can easily be reused.
 1. Understand and explain the use of Express Routers.
+Express routers allow us to separate and organize code using a path and linking it to that route's operations in a different file.
 1. Describe tooling used to manually test the correctness of an API.
+API can be tested by using the built in debugger in vscode, by marking lines as breakpoints.
 
 ## Instructions
 
