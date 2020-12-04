@@ -48,8 +48,15 @@ router.get('/:id', checkProjectId, async (req, res, next) => {
     res.status(200).json(req.projectInfo)
 })
 router.get('/:id/actions', checkProjectId, async (req, res, next) => {
-    const actionInfo = req.projectInfo.actions
-    res.status(200).json(actionInfo)
+    const { id } = req.params
+    try {
+        const projectActions = await projects.getProjectActions(id)
+        res.status(200).json(projectActions)
+    } catch(error) {
+        next(error)
+    }
+    // const actionInfo = req.projectInfo.actions
+    // res.status(200).json(actionInfo)
 })
 router.post('/', checkPostedProject, async (req, res, next) => {
     try {
